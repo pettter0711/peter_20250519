@@ -1,6 +1,10 @@
 {
     "editor.formatOnSave": true,
+    "editor.tabSize": 4,
     "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.codeActionsOnSave": {
+        "source.fixAll": "always"
+    },
     "prettier.tabWidth": 4,
     "liveSassCompile.settings.formats": [
         {
