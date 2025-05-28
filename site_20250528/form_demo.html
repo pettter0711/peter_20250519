@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Form 表單</title>
+    </head>
+    <body>
+        <h1>Form 表單</h1>
+        <hr />
+        <h2>GET 方法</h2>
+        <form
+            action="https://book.niceinfos.com/api/form/index.php"
+            method="get"
+        >
+            <div>
+                <label for="account">Account</label>
+                <input type="text" name="account" id="account" />
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input type="text" name="password" id="password" />
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+        <h2>POST 方法</h2>
+        <form
+            action="https://book.niceinfos.com/api/form/index.php"
+            method="post"
+        >
+            <div>
+                <label for="account">Account</label>
+                <input type="text" name="account" id="account" />
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input type="text" name="password" id="password" />
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </body>
+</html>

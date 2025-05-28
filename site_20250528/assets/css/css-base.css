@@ -1,0 +1,7 @@
+.profile {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #000;
+    color: #8b3512;
+    background: linear-gradient(to left, #000, #fff);
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>表單元素</title>
+    </head>
+    <body>
+        <h1>表單元素</h1>
+        <hr />
+        <form
+            action="https://book.niceinfos.com/api/form/index.php"
+            method="get"
+        >
+            <section>
+                <h2>Radio 單選</h2>
+                <div>
+                    <input
+                        type="radio"
+                        name="gender"
+                        id="gender-male"
+                        checked
+                    />
+                    <label for="gender-male">男性</label>
+                </div>
+                <div>
+                    <input type="radio" name="gender" id="gender-female" />
+                    <label for="gender-female">女性</label>
+                </div>
+                <div>
+                    <input type="radio" name="gender" id="gender-other" />
+                    <label for="gender-other">其他</label>
+                </div>
+            </section>
+            <section>
+                <h2>Select 下拉選單</h2>
+                <div>
+                    <label for="city">城市</label>
+                    <select name="city" id="city">
+                        <option value="">請選擇城市</option>
+                        <option value="taipei">台北</option>
+                        <option value="taichung">台中</option>
+                        <option value="tainai">台南</option>
+                        <option value="kaohsiung">高雄</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="hobby">興趣</label>
+                    <select name="hobby[]" id="hobby" multiple>
+                        <option value="">請選擇興趣</option>
+                        <option value="read">閱讀</option>
+                        <option value="sport">運動</option>
+                        <option value="trip">旅遊</option>
+                    </select>
+                </div>
+            </section>
+            <section>
+                <h2>Textarea</h2>
+                <div>
+                    <textarea
+                        name="textarea"
+                        id="textarea"
+                        cols="60"
+                        rows="10"
+                        style="resize: vertical"
+                    ></textarea>
+                </div>
+            </section>
+            <section>
+                <h2>日期&時間 date, time, datetime-local</h2>
+                <div>
+                    <label for="date">日期</label>
+                    <input type="date" name="date" id="date" />
+                </div>
+                <div>
+                    <label for="time">時間</label>
+                    <input type="time" name="time" id="time" />
+                </div>
+                <div>
+                    <label for="datetime-local">日期+時間</label>
+                    <input
+                        type="datetime-local"
+                        name="datetime-local"
+                        id="datetime-local"
+                    />
+                </div>
+            </section>
+            <section>
+                <button class="btn">Submit</button>
+            </section>
+        </form>
+        <hr />
+        <form
+            action="https://book.niceinfos.com/api/form/index.php"
+            method="post"
+            enctype="multipart/form-data"
+        >
+            <section>
+                <h2>File 檔案傳送</h2>
+                <div>
+                    <label for="file">檔案</label>
+                    <input type="file" name="file" id="file" accept="image/*" />
+                </div>
+                <button class="btn">Submit</button>
+            </section>
+        </form>
+    </body>
+</html>
