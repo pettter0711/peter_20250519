@@ -1,0 +1,84 @@
+.header {
+    margin-bottom: 15px;
+    padding: 15px 0;
+    border-bottom: 1px solid #000;
+}
+
+.demo {
+    margin-bottom: 15px;
+    color: #000;
+}
+
+.demo .child2 {
+    color: red;
+}
+
+.demo > .child {
+    color: blue;
+}
+
+.grandchild {
+    color: green;
+}
+
+.trigger-btn {
+    margin: 15px;
+    padding: 10px 15px;
+    outline: 0;
+    border: 0;
+    border-radius: 4px;
+    background-color: #3e3eff;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.content {
+    padding: 15px;
+    font-size: 24px;
+    color: #fff;
+    background-color: #3e3eff;
+    display: none;
+}
+
+.trigger {
+    display: none;
+}
+
+.trigger:checked + .content {
+    display: block;
+}
+
+.trigger-btn.close {
+    background-color: #f52121;
+    display: none;
+}
+
+.trigger:checked ~ .tigger-btn {
+    display: none;
+}
+
+.trigger:checked ~ .tigger-btn.close {
+    display: inline-block;
+}
+
+.trigger-btn > .close {
+    display: none;
+}
+
+.trigger:checked ~ .trigger-btn > .open {
+    display: none;
+}
+
+.trigger:checked ~ .trigger-btn > .close {
+    display: inline;
+}
+
+.trigger:checked ~ .trigger-btn {
+    background-color: #f52121;
+}
+
+.trigger:checked ~ .content {
+    display: block;
+}

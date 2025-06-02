@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CSS Selector</title>
+        <link rel="stylesheet" href="../assets/css/reset.css" />
+        <link rel="stylesheet" href="assets/css/css_selector.css" />
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <h1 class="slogan">CSS Selector</h1>
+            </div>
+        </header>
+        <main class="main">
+            <div class="container">
+                <section>
+                    <h2>後代選擇器</h2>
+                    <div class="demo">
+                        <div class="child">
+                            <span>小孩</span>
+                            <span class="grandchild">孫子</span>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h2>子階選擇器</h2>
+                    <div class="demo">
+                        <div class="child2">
+                            <span>小孩</span>
+                            <span class="grandchild">孫子</span>
+                            <span>孫子2</span>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h2>相鄰兄弟選擇器(嚴謹)</h2>
+                    <div>
+                        <label class="trigger-btn" for="trigger">開啟</label>
+                    </div>
+                    <input type="checkbox" class="trigger" id="trigger" />
+                    <div class="content">你看到我了嗎?</div>
+                </section>
+                <section>
+                    <h2>相鄰兄弟選擇器(一般)-互動結構1</h2>
+                    <div>
+                        <input type="checkbox" class="trigger" id="trigger2" />
+                        <label for="trigger2" class="trigger-btn">開啟</label>
+                        <label for="trigger2" class="trigger-btn close"
+                            >關閉</label
+                        >
+                        <div class="content">你看到我了嗎?</div>
+                    </div>
+                </section>
+                <section>
+                    <h2>相鄰兄弟選擇器(一般)-互動結構2</h2>
+                    <div>
+                        <input type="checkbox" class="trigger" id="trigger3" />
+                        <label for="trigger3" class="trigger-btn">
+                            <span class="open">開啟</span>
+                            <span class="close">關閉</span>
+                        </label>
+                        <div class="content">你看到我了嗎?</div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </body>
+</html>
