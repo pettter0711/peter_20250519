@@ -1,0 +1,54 @@
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: #000;
+}
+
+.box1 {
+    position: relative;
+    background-color: red;
+    z-index: 2;
+}
+
+.box1-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.box1-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.box2 {
+    position: relative;
+    background-color: blue;
+    z-index: 1;
+    top: -80px;
+}
+
+.box2-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 88;
+}
+
+.box2-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: green;
+    z-index: 99;
+}
+
+/**
+z-index要同階級的html元素比較才有意義，如父層-父層 / 子層-子層。
+不同階級使用z-index處理順序會沒效果。
+
+以上案例，box1與box2為同一階級，但box1的z-index較高，所以順序優先。
+雖然box2中的box2-1及box2-2的z-index非常高，但父層的box2就輸了，
+所以順序再怎麼高，都會被同為父層的box1遮蓋。
+*/

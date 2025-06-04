@@ -1,0 +1,68 @@
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #333333;
+}
+
+.banner {
+    display: none;
+}
+
+#banner-trigger {
+    display: none;
+}
+
+/* banner 互動效果 */
+#banner-trigger:checked ~ .banner {
+    display: block;
+}
+
+#banner-trigger:checked ~ .container .btn {
+    background: red;
+}
+
+/* 讓banner置於頁面最上層 */
+.banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* 與banner-mask都是absolute，為避免被banner-mask遮住，z-index要較高 */
+.banner-wrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 500px;
+    background-color: #ffffff;
+    z-index: 2;
+}
+
+/* .banner-mask .btn.close {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    background-color: transparent;
+} */
+
+/* banner遮罩，同事具有點擊遮罩關閉banner的功能 */
+.banner-mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* cursor: pointer; */
+}
