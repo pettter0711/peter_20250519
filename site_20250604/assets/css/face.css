@@ -1,1 +1,90 @@
 /* css待建立 */
+.face {
+    position: relative;
+    width: 300px;
+    height: 320px;
+    border-radius: 10px;
+    background-color: #fdcca6;
+}
+
+.eyebrow {
+    position: absolute;
+    top: 50px;
+    width: 100px;
+    height: 20px;
+    background-color: #000;
+    z-index: 2;
+}
+
+.eyebrow-left {
+    left: 25px;
+}
+
+.eyebrow-right {
+    right: 25px;
+}
+
+.eye {
+    position: absolute;
+    top: 60px;
+    --r: 100px;
+    width: var(--r);
+    height: var(--r);
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.eye-left {
+    left: 30px;
+}
+
+.eye-right {
+    right: 30px;
+}
+
+.eye-block {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    --r: 50px;
+    width: var(--r);
+    height: var(--r);
+    border-radius: 50%;
+    background-color: #000;
+}
+
+.nose {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    --r: 50px;
+    width: var(--r);
+    height: var(--r);
+    border-radius: 50%;
+    background-color: #ff9839;
+}
+
+.mouth {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 140px;
+    height: 50px;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.mouth-tongue {
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translate(-50%);
+    --r: 50px;
+    width: var(--r);
+    height: var(--r);
+    border-radius: 50%;
+    background-color: #ff0e0e;
+}
