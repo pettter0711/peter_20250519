@@ -6,6 +6,11 @@
     box-sizing: border-box;
 }
 
+ul,
+ol {
+    list-style-type: none;
+}
+
 .container {
     position: relative;
     margin: 0 auto;

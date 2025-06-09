@@ -2,7 +2,7 @@
 .face {
     position: relative;
     width: 300px;
-    height: 320px;
+    height: 300px;
     border-radius: 10px;
     background-color: #fdcca6;
 }
@@ -30,8 +30,9 @@
     --r: 100px;
     width: var(--r);
     height: var(--r);
-    border-radius: 50%;
+    border-radius: 100%;
     background-color: #fff;
+    overflow: hidden;
 }
 
 .eye-left {
@@ -44,26 +45,45 @@
 
 .eye-block {
     position: absolute;
-    top: 50%;
+    /* top: 50%;
+    left: 50%; */
+    /* transform: translate(-50%, -50%); */
+    top: calc(50% - (var(--r) / 2));
+    /* left: calc(50% - (var(--r) / 2)); */
     left: 50%;
-    transform: translate(-50%, -50%);
-    --r: 50px;
+    --r: 50%;
     width: var(--r);
     height: var(--r);
-    border-radius: 50%;
+    border-radius: 100%;
     background-color: #000;
+    animation: eyeBlock 0.8s infinite ease-in-out alternate both;
 }
 
 .nose {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -20%);
+    top: calc(50% - (var(--r) / 4));
+    left: calc(50% - (var(--r) / 2));
+    /* transform: translate(-50%, -20%); */
     --r: 50px;
     width: var(--r);
     height: var(--r);
     border-radius: 50%;
     background-color: #ff9839;
+}
+
+.beards {
+    position: absolute;
+    left: calc(50% - 26px);
+    bottom: 82px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.beards .fur {
+    width: 10px;
+    height: 18px;
+    background-color: #000;
 }
 
 .mouth {
@@ -79,12 +99,38 @@
 
 .mouth-tongue {
     position: absolute;
-    bottom: -25px;
-    left: 50%;
-    transform: translate(-50%);
-    --r: 50px;
+    bottom: calc((var(--r) / 2) * -1);
+    left: calc(50% - (var(--r) / 2));
+    /* transform: translate(-50%); */
+    --r: 60px;
     width: var(--r);
     height: var(--r);
     border-radius: 50%;
     background-color: #ff0e0e;
+    animation-name: tongue;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+    animation-direction: alternate;
+}
+
+@keyframes eyeBlock {
+    0% {
+        left: 0%;
+    }
+
+    100% {
+        left: 50%;
+    }
+}
+
+@keyframes tongue {
+    0% {
+        background-color: #ff0e0e;
+    }
+
+    100% {
+        background-color: #cbce2e;
+    }
 }
