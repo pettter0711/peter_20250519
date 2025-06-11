@@ -1,0 +1,12 @@
+.nowrap {
+    flex-wrap: nowrap;
+    /* 預設 */
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.wrap-reverse {
+    flex-wrap: wrap-reverse;
+}

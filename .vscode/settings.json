@@ -6,6 +6,7 @@
         "source.fixAll": "always"
     },
     "prettier.tabWidth": 4,
+    "liveServer.settings.port": 5300,
     "liveSassCompile.settings.formats": [
         {
             "format": "expanded",

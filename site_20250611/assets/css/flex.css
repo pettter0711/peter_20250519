@@ -1,0 +1,38 @@
+.slogan {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #0351e4;
+    color: #0351e4;
+}
+
+.title {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #0351e4;
+    color: #fff;
+}
+
+/*
+flex 特色
+1. 只會影響第一層(子階)
+2. 子階任何顯示方式(display)都不再重要，統一由 flex 分配
+3. 雖然子階顯示方式不再重要，但原有的屬性還是可以使用(例如: flex 的 justify-content)
+*/
+
+.row {
+    display: flex;
+    /* flex-direction: row; */
+    gap: 10px;
+    margin-bottom: 10px;
+    height: 100px;
+    border: 1px solid #000;
+    padding: 10px;
+}
+
+.col {
+    padding: 10px;
+    background-color: #f00;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+}

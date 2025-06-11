@@ -1,0 +1,33 @@
+/* 
+先決定direction，再決定start/end !!!
+
+方向屬性:
+1) row (預設): 主軸-水平，由左至右 // 交叉軸: 垂直，上至下 (固定)
+2) row-reverse: 主軸-水平，由右至左 // 交叉軸: 垂直，上至下 (固定)
+3) column: 主軸-垂直，由上至下 // 交叉軸: 水平，左至右 (固定)
+2) column-reverse: 主軸-垂直，由下至上 // 交叉軸: 水平，左至右 (固定)
+
+start/end屬性:
+justify-content: 對應主軸 (物件在主軸的start/end點)
+align-items: 對應交叉軸 (物件在交叉軸軸的start/end點)
+*/
+
+.dir-row {
+    flex-direction: row;
+}
+
+.dir-row-reverse {
+    flex-direction: row-reverse;
+}
+
+.dir-column {
+    flex-direction: column;
+}
+
+.dir-column-reverse {
+    flex-direction: column-reverse;
+}
+
+.row {
+    min-height: 600px;
+}
