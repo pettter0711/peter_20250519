@@ -1,0 +1,70 @@
+.slogan {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-bottom: 3px solid #1e1ef3;
+    color: #1e1ef3;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.item {
+    padding: 10px;
+    background-color: #2858db;
+    color: #fff;
+}
+
+/* 
+em:
+依父層設定的尺寸或字型大小來等比縮放
+有堆疊倍數縮放的效果
+ */
+
+.em-10 {
+    font-size: 1em;
+}
+
+.em-20 {
+    font-size: 2em;
+}
+
+.em-30 {
+    font-size: 3em;
+}
+
+.em-40 {
+    font-size: 4em;
+}
+
+.em-50 {
+    font-size: 5em;
+}
+
+.em-60 {
+    font-size: 6em;
+}
+
+.em-70 {
+    font-size: 7em;
+}
+
+.em-80 {
+    font-size: 8em;
+}
+
+.em-90 {
+    font-size: 9em;
+}
+
+.em-100 {
+    font-size: 10em;
+}
+
+.t1 {
+    font-size: 500px;
+    font-size: 20px;
+}
+
+.t2 {
+    font-size: 2em;
+    /* font-size: 50%; */
+}

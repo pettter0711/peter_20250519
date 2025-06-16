@@ -1,0 +1,44 @@
+.slogan {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-bottom: 3px solid #1e1ef3;
+    color: #1e1ef3;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.grid-children {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: 500px;
+    gap: 10px;
+    /* align-items: center;
+    justify-items: center; */
+}
+
+.grid-children .item {
+    /* width: 120px;
+    height: 120px; */
+    background-color: #2858db;
+    color: #fff;
+}
+
+.item.span-2 {
+    grid-column: span 2;
+}
+
+.item.ss-span4 {
+    /* 從第2欄開始，跨2欄 */
+    grid-column: 2 / span 2;
+}
+
+.item.demo {
+    /* grid-column: span 2; */
+
+    /* 從第2欄開始，到第7欄 */
+    /* grid-column-start: 2;
+    grid-column-end: 8; */
+
+    /* 從第2欄開始，往後跨8欄 */
+    grid-column: 2 / span 8;
+}

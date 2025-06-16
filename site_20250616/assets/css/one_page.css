@@ -1,0 +1,47 @@
+html,
+body {
+    font-size: 16px;
+}
+
+.header {
+    padding: 0 20px;
+    height: 80px;
+    background-color: #b1f3ff;
+}
+
+.header .row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    height: 100%;
+}
+
+.header .menu {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: flex-end;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.header .menu > li {
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+
+.header .menu > li:hover {
+    color: #1717d3;
+}
+
+.page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #ddd;
+}
+
+.page:nth-child(odd) {
+    background-color: #a7a7a7;
+}
