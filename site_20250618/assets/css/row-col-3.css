@@ -1,0 +1,24 @@
+.slogan {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-bottom: 3px solid #1e1ef3;
+    color: #1e1ef3;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.row {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.row .col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    min-height: 200px;
+    background-color: red;
+    color: #fff;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Media Print</title>
+        <link rel="stylesheet" href="../assets/css/reset.css" />
+        <link rel="stylesheet" href="assets/css/media-print.css" />
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="slogan">Media Print</h1>
+            <div class="fn no-print">
+                <div class="filter">
+                    <input type="text" placeholder="請輸入姓名" />
+                </div>
+                <div class="print">
+                    <button onclick="window.print()">Print</button>
+                </div>
+            </div>
+            <div class="table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>姓名</th>
+                            <th>成績</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>張三</td>
+                            <td>90</td>
+                        </tr>
+                        <tr>
+                            <td>李四</td>
+                            <td>80</td>
+                        </tr>
+                        <tr>
+                            <td>王五</td>
+                            <td>70</td>
+                        </tr>
+                        <tr>
+                            <td>小六</td>
+                            <td>60</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>
