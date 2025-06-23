@@ -1,0 +1,23 @@
+.slogan {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #273ae9;
+    color: #273ae9;
+}
+
+.blabla {
+    animation-iteration-count: infinite;
+}
+
+.article {
+    animation: bounce 1s infinite;
+}
+
+.hover-animate {
+    cursor: pointer;
+}
+
+.hover-animate:hover {
+    animation: rubberBand 1s;
+    animation-iteration-count: 1;
+}

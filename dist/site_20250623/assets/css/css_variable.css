@@ -1,0 +1,49 @@
+:root {
+    --primary-color: #273ae9;
+    --primary-bg: #c0c0c0;
+    --radius: 5px;
+    --scale-big: scale(1.5);
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slogan {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #273ae9;
+    color: #273ae9;
+}
+
+.variable {
+    --padding: 10px;
+    padding: var(--padding);
+    margin-bottom: 20px;
+    color: var(--primary-color);
+    background-color: var(--primary-bg);
+    text-align: center;
+    transform: var(--scale-big);
+}
+
+.item {
+    padding: var(--padding); /*--padding不是全域變數，但子層可以繼承*/
+}
+
+.wrap {
+    padding: var(--padding); /*--padding不是全域變數，非子層吃不到*/
+    margin-bottom: 20px;
+    color: var(--primary-color);
+    background-color: var(--primary-bg);
+}
+
+.radius {
+    --r: 80px;
+    width: var(--r);
+    height: var(--r);
+    background-color: var(--primary-bg);
+    border-radius: var(--radius);
+    transform: var(--scale-big) var(--trans-x-10r) var(--trans-y-10d);
+}

@@ -1,0 +1,27 @@
+.header {
+  padding: 20px;
+  background-color: #eeeeee;
+}
+.header .wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .wrap .logo {
+  font-size: 2rem;
+  color: red;
+}
+.header .wrap .menu ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.header .wrap .menu ul > li {
+  font-size: 1.2rem;
+  color: #1a1a1a;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.header .wrap .menu ul > li:hover {
+  color: red;
+}/*# sourceMappingURL=variable.css.map */

@@ -7,11 +7,12 @@
     },
     "prettier.tabWidth": 4,
     "liveServer.settings.port": 5300,
+    "liveServer.settings.root": "/dist", //更改設定後，要重新啟動liveServer
     "liveSassCompile.settings.formats": [
         {
             "format": "expanded",
             "extensionName": ".css",
-            "savePath": "/dist/css"
+            "savePath": "/dist/assets/css"
         }
     ]
 }
