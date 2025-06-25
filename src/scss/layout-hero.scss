@@ -1,0 +1,146 @@
+@import "reset";
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: $header-height;
+    width: 100%;
+    color: $header-color;
+    font-size: $header-font-size;
+    font-weight: $header-font-weight;
+    z-index: 99;
+
+    .wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 15px;
+        height: 100%;
+
+        .logo {
+            font-size: 1.5rem;
+        }
+
+        .menu {
+            ul {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 15px;
+
+                li {
+                    a {
+                        padding: 10px 15px;
+                        border-radius: 5px;
+                        transition: all 0.3s ease-in-out;
+
+                        &:hover {
+                            background-color: #fff;
+                            color: #000;
+                        }
+                    }
+                    &.active {
+                        a {
+                            background-color: #facc15;
+                            color: #000;
+
+                            &:hover {
+                                background-color: #ffe169;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to right, #667eea, #764ba2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 700;
+    position: relative;
+
+    &::before {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba($color: #000, $alpha: 0.39);
+    }
+
+    .wrap {
+        position: relative;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+
+        .slogan {
+            font-size: 2rem;
+        }
+
+        .sub-slogan {
+            margin: 0 auto;
+            width: 70%;
+            font-size: 1.5rem;
+            font-weight: 500;
+            line-height: 2;
+        }
+
+        .btn-group {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+
+            .btn {
+                padding: 15px 30px;
+                outline: 0;
+                border: 0;
+                border-radius: 5px;
+                background-color: #facc15;
+                color: #000;
+                font-size: 1.1rem;
+                font-weight: 600;
+                cursor: pointer;
+                transition: all 0.3s ease-in-out;
+
+                &:hover {
+                    background-color: #ceb038;
+                }
+
+                &.border {
+                    background-color: transparent;
+                    border: 1px solid #fff;
+                    color: #fff;
+
+                    &:hover {
+                        background-color: #fff;
+                        color: #000;
+                    }
+                }
+
+                &.danger {
+                    background-color: #fa5615;
+                    color: #fff;
+                    &:hover {
+                        background-color: #bd400f;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
