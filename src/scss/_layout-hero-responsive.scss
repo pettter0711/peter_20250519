@@ -1,0 +1,60 @@
+@media screen and (max-width: 768px) {
+    .header {
+        .wrap {
+            justify-content: center;
+
+            .menu {
+                display: none;
+            }
+
+            .hamburger {
+                display: grid;
+                position: absolute;
+                right: 0;
+
+                // 狀態附加於容器，外觀變化在內容
+                &.active {
+                    > span {
+                        &:first-child {
+                            transform: rotate(45deg) translate(0px, 10px);
+                        }
+
+                        &:nth-child(2) {
+                            display: none;
+                        }
+
+                        &:last-child {
+                            transform: rotate(-45deg) translate(-2px, -8px);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .main {
+        .wrap {
+            .btn-group {
+                flex-direction: column;
+                min-width: 300px;
+            }
+        }
+    }
+
+    .info {
+        .row {
+            grid-template-columns: 1fr;
+            gap: 40px;
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .main {
+        .wrap {
+            .btn-group {
+                min-width: unset;
+            }
+        }
+    }
+}
