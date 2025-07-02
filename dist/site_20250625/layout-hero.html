@@ -9,11 +9,13 @@
     <body>
         <div class="header">
             <div class="container">
+                <input type="checkbox" name="" id="menu-toggle" />
                 <div class="wrap">
                     <div class="logo">
                         <a href="">品牌Logo</a>
                     </div>
                     <div class="menu">
+                        <label for="menu-toggle"></label>
                         <ul>
                             <li><a href="#">首頁</a></li>
                             <li><a href="#">產品</a></li>
@@ -21,11 +23,11 @@
                             <li class="active"><a href="#">登入</a></li>
                         </ul>
                     </div>
-                    <div class="hamburger">
+                    <label class="hamburger" for="menu-toggle">
                         <span></span>
                         <span></span>
                         <span></span>
-                    </div>
+                    </label>
                 </div>
             </div>
         </div>
@@ -68,4 +70,19 @@
             </div>
         </div>
     </body>
+    <!-- <script>
+        let headerWrap = document.querySelector(".header .wrap");
+        let menuTrigger = headerWrap.querySelector(".hamburger");
+        console.log(headerWrap, menuTrigger);
+        console.log(headerWrap.classList);
+
+        const toggleMenu = () => {
+            headerWrap.classList.toggle("active");
+        };
+
+        menuTrigger.addEventListener("click", (e) => {
+            toggleMenu();
+            console.log(headerWrap.classList);
+        });
+    </script> -->
 </html>
