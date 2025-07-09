@@ -29,22 +29,22 @@ const calcRun = () => {
     }
 
     let result;
-    // 3. 判斷 op
-    if (op == "+") {
-        result = value1 + value2;
-    }
+    // // 3. 判斷 op
+    // if (op == "+") {
+    //     result = value1 + value2;
+    // }
 
-    if (op == "-") {
-        result = value1 - value2;
-    }
+    // if (op == "-") {
+    //     result = value1 - value2;
+    // }
 
-    if (op == "*") {
-        result = value1 * value2;
-    }
+    // if (op == "*") {
+    //     result = value1 * value2;
+    // }
 
-    if (op == "/") {
-        result = value1 / value2;
-    }
+    // if (op == "/") {
+    //     result = value1 / value2;
+    // }
 
     // hashmap作法
     // 用物件來運行程式，最後抱進一個變數裡。
@@ -53,9 +53,17 @@ const calcRun = () => {
     //     "+"(a, b) {
     //         return a + b;
     //     },
-    //     "-"() {},
+    //     "-"(a, b) {
+    //         return a - b;
+    //     },
+    //     "*"(a, b) {
+    //         return a * b;
+    //     },
+    //     "/"(a, b) {
+    //         return a / b;
+    //     },
     // };
-    // let result = ops[op](value1, value2);
+    // result = ops[op](value1, value2);
 
     // switch作法
     // switch (op) {
