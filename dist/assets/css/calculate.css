@@ -71,7 +71,7 @@ ol {
   background-color: #1e85b1;
 }
 
-.result-wrap {
+#result-wrap {
   margin-top: 20px;
   padding: 20px;
   display: flex;
@@ -84,4 +84,7 @@ ol {
   color: #181818;
   font-size: 20px;
   font-weight: bold;
+}
+#result-wrap.hide {
+  display: none;
 }/*# sourceMappingURL=calculate.css.map */
