@@ -1,0 +1,147 @@
+@import "reset";
+
+.header {
+    margin-bottom: 20px;
+    height: 60px;
+    border-bottom: 1px solid #dedede;
+    text-align: center;
+
+    .header-title {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+    }
+}
+
+.main {
+    .fn {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 10px;
+        margin-bottom: 20px;
+
+        .btn {
+            padding: 10px 12px;
+            outline: 0;
+            border: 1px solid #3d77e4;
+            border-radius: 4px;
+            background-color: transparent;
+            color: #fff;
+            cursor: pointer;
+            transition: 0.3s ease;
+
+            &:hover {
+                background-color: #2b58ac;
+            }
+
+            &.all {
+                border-color: #21e79b;
+                background-color: transparent;
+                color: #000;
+
+                &.active {
+                    background-color: #21e79b;
+                    color: #fff;
+                }
+
+                &:hover {
+                    background-color: #21e79b;
+                    color: #fff;
+                }
+            }
+
+            &.pass {
+                border-color: #21afe7;
+                background-color: transparent;
+                color: #000;
+
+                &.active {
+                    background-color: #21afe7;
+                    color: #fff;
+                }
+
+                &:hover {
+                    background-color: #21afe7;
+                    color: #fff;
+                }
+            }
+
+            &.fail {
+                border-color: #e72121;
+                background-color: transparent;
+                color: #000;
+
+                &.active {
+                    background-color: #e72121;
+                    color: #fff;
+                }
+
+                &:hover {
+                    background-color: #e72121;
+                    color: #fff;
+                }
+            }
+
+            &.both {
+                border-color: #e049d3;
+                background-color: transparent;
+                color: #000;
+
+                &.active {
+                    background-color: #e049d3;
+                    color: #fff;
+                }
+
+                &:hover {
+                    background-color: #e049d3;
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    .all-table-wrap {
+        &.is-both {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+
+            .table {
+                display: none;
+
+                &.both-table {
+                    display: table;
+                }
+            }
+        }
+
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+
+            th,
+            td {
+                padding: 20px;
+                border: 1px solid #cccccc;
+                text-align: center;
+            }
+
+            th {
+                background-color: #3d77e4;
+                color: #fff;
+            }
+
+            tbody tr:nth-child(even) {
+                background-color: #dedede;
+            }
+
+            &.both-table {
+                display: none;
+            }
+        }
+    }
+}
